@@ -1,5 +1,5 @@
 {
-    "name": "nubay_services/par_image",
+    "name": "handmangroup/par_image",
     "description": "Creates a paragraph type for images",
     "type": "drupal-module",
     "authors": [
