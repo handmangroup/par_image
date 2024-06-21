@@ -7,8 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.image
   module:
     - options
-id: paragraph.image.field_paragraph_card_shadow
-field_name: field_paragraph_card_shadow
+id: paragraph.image.field_paragraph_image_shadow
+field_name: field_paragraph_image_shadow
 entity_type: paragraph
 bundle: image
 label: Shadow

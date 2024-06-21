@@ -7,8 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.image
   module:
     - options
-id: paragraph.image.field_paragraph_card_img_pos
-field_name: field_paragraph_card_img_pos
+id: paragraph.image.field_paragraph_img_pos
+field_name: field_paragraph_img_pos
 entity_type: paragraph
 bundle: image
 label: 'Image Position'

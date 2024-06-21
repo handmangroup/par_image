@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: hon8WqGkb-9XE8ORa-73y7xAoqQMORhkjpRZdTOdPzw
 id: paragraph.field_paragraph_image_extra_class
-field_name: field_paragraph_card_extra_class
+field_name: field_paragraph_image_extra_class
 entity_type: paragraph
 type: string
 settings:
