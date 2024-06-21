@@ -44,14 +44,14 @@
 {% else %}
   {% set img_url = '/' %}
 {% endif %}
-{% set img_pos = paragraph.field_paragraph_card_img_pos.value|render|trim|default('top') %}
+{% set img_pos = paragraph.field_paragraph_img_pos.value|render|trim|default('top') %}
 {%
   set classes = [
   'paragraph',
   'paragraph--type--' ~ paragraph.bundle|clean_class,
   'par_image',
   img_pos == 'background' ? 'image-wrapper bg-full bg-image bg-overlay',
-  paragraph.field_paragraph_card_extra_class.value|render|trim,
+  paragraph.field_paragraph_image_extra_class.value|render|trim,
   view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class
 ]
 %}
@@ -59,7 +59,7 @@
 {%
   set img_classes = [
   paragraph.field_rounded_options.value|replace({'_':'-'}),
-  paragraph.field_paragraph_card_shadow.value|render|trim,
+  paragraph.field_paragraph_image_shadow.value|render|trim,
   'h-' ~paragraph.field_par_image_height.value
 ]
 %}
