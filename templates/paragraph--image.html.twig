@@ -55,7 +55,7 @@
   view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class
 ]
 %}
-{% set img_attribute = create_attribute() %}
+{% set img_attributes = create_attribute() %}
 {%
   set img_classes = [
   paragraph.field_rounded_options.value|replace({'_':'-'}),
