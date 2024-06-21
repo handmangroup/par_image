@@ -1,4 +1,4 @@
-uuid: 9c257bd8-1099-4653-a7bf-01a7fda8a15a
+field_paragraph_image_ex_class
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.image.field_image_caption
     - field.field.paragraph.image.field_par_image
     - field.field.paragraph.image.field_par_image_height
-    - field.field.paragraph.image.field_paragraph_image_extra_class
+    - field.field.paragraph.image.field_paragraph_image_ex_class
     - field.field.paragraph.image.field_paragraph_img_pos
     - field.field.paragraph.image.field_paragraph_image_shadow
     - field.field.paragraph.image.field_rounded_options
@@ -41,7 +41,7 @@ content:
     settings:
       placeholder: ''
     third_party_settings: {  }
-  field_paragraph_image_extra_class:
+  field_paragraph_image_ex_class:
     type: string_textfield
     weight: 5
     region: content
