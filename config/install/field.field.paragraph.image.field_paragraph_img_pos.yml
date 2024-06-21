@@ -1,0 +1,21 @@
+uuid: bb866328-7985-465b-adfd-388c6e5a1356
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_card_img_pos
+    - paragraphs.paragraphs_type.image
+  module:
+    - options
+id: paragraph.image.field_paragraph_card_img_pos
+field_name: field_paragraph_card_img_pos
+entity_type: paragraph
+bundle: image
+label: 'Image Position'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,15 @@
+{
+    "name": "nubay_services/par_image",
+    "description": "Creates a paragraph type for images",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Jill Handman",
+            "email": "jill@handmangroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/paragraphs": "^1.15"
+    }
+}

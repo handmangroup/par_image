@@ -1,0 +1,41 @@
+uuid: 0c5b03e7-3bba-4439-8fd5-030e497f0197
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: zS5u0fLQesKBUP1QsfWE98fNTrE-Ff-2M5-DD9W4ieU
+id: paragraph.field_paragraph_card_shadow
+field_name: field_paragraph_card_shadow
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: shadow-default
+      label: Default
+    -
+      value: shadow-none
+      label: 'Shadow None'
+    -
+      value: shadow-sm
+      label: 'Shadow SM'
+    -
+      value: shadow
+      label: 'Shadow MD'
+    -
+      value: shadow-lg
+      label: 'Shadow LG'
+    -
+      value: shadow-xl
+      label: 'Shadow XL'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

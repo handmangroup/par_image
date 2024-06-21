@@ -1,0 +1,20 @@
+uuid: cd601664-2258-49f9-93c0-fc6d19b9e9e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_par_image_height
+field_name: field_par_image_height
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
