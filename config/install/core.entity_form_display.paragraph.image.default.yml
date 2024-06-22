@@ -6,13 +6,53 @@ dependencies:
     - field.field.paragraph.image.field_par_image
     - field.field.paragraph.image.field_par_image_height
     - field.field.paragraph.image.field_paragraph_image_ex_class
-    - field.field.paragraph.image.field_paragraph_img_pos
     - field.field.paragraph.image.field_paragraph_image_shadow
+    - field.field.paragraph.image.field_paragraph_img_pos
     - field.field.paragraph.image.field_rounded_options
     - paragraphs.paragraphs_type.image
   module:
+    - field_group
     - media_library
     - text
+third_party_settings:
+  field_group:
+    group_image_details:
+      children:
+        - field_paragraph_img_pos
+        - field_par_image_height
+        - field_rounded_options
+        - field_paragraph_image_shadow
+        - field_paragraph_image_ex_class
+      label: 'Image Details'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_image_basics:
+      children:
+        - field_par_image
+        - field_image_caption
+      label: 'Image Basics'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: jP5J6Y16Eq4dPxKja2Oukb_jHKORO4CBV3XFinmY-vQ
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image
@@ -20,7 +60,7 @@ mode: default
 content:
   field_image_caption:
     type: text_textarea
-    weight: 6
+    weight: 2
     region: content
     settings:
       rows: 5
@@ -28,7 +68,7 @@ content:
     third_party_settings: {  }
   field_par_image:
     type: media_library_widget
-    weight: 0
+    weight: 1
     region: content
     settings:
       media_types: {  }
@@ -48,15 +88,15 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_paragraph_img_pos:
-    type: options_select
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_paragraph_image_shadow:
     type: options_select
     weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_paragraph_img_pos:
+    type: options_select
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
