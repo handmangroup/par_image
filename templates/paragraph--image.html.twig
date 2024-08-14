@@ -63,6 +63,18 @@
   'h-' ~paragraph.field_par_image_height.value
 ]
 %}
+{% set pos_right = [
+  col-lg-6,
+  image-wrapper,
+  bg-image,
+  bg-cover,
+  order-md-2
+]
+%}
+{% set pos_left = [
+  col-lg-6, image-wrapper, bg-image, bg-cover
+]
+%}
 {% block paragraph %}
 
 <div{{ attributes.addClass(classes) }} {% if img_pos == 'background' and img_url != '/' %}data-image-src="{{ img_url }}"{% endif %} >
@@ -77,14 +89,14 @@
       <img{{ img_attributes.addClass(img_classes) }} src="{{ img_url }}" alt="image">
     {% elseif img_pos == 'left' %}
       <div class="row gx-0">
-        <img{{ img_attributes.addClass(img_classes) }} class="col-lg-6 image-wrapper bg-image bg-cover" data-image-src="{{ img_url }}"></img>
+        <img{{ img_attributes.addClass(img_classes) }} src="{{ img_url }}"></img>
         <div class="col-lg-6">
           <div>{{ content.field_image_caption }}</div>
         </div>
       </div>
     {% elseif img_pos == 'right' %}
       <div class="row gx-0">
-        <img{{ img_attributes.addClass(img_classes) }} class="col-lg-6 image-wrapper bg-image bg-cover order-md-2" data-image-src="{{ img_url }}"></img>
+        <img{{ img_attributes.addClass(img_classes, pos_right) }} src="{{ img_url }}"></img>
         <div class="col-lg-6">
           <div>{{ content.field_image_caption }}</div>
         </div>
