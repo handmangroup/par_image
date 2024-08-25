@@ -4,11 +4,8 @@ dependencies:
   config:
     - field.field.paragraph.image.field_image_caption
     - field.field.paragraph.image.field_par_image
-    - field.field.paragraph.image.field_par_image_height
     - field.field.paragraph.image.field_paragraph_image_ex_class
-    - field.field.paragraph.image.field_paragraph_image_shadow
     - field.field.paragraph.image.field_paragraph_img_pos
-    - field.field.paragraph.image.field_rounded_options
     - paragraphs.paragraphs_type.image
   module:
     - field_group
@@ -18,10 +15,6 @@ third_party_settings:
   field_group:
     group_image_details:
       children:
-        - field_paragraph_img_pos
-        - field_par_image_height
-        - field_rounded_options
-        - field_paragraph_image_shadow
         - field_paragraph_image_ex_class
       label: 'Image Details'
       region: content
@@ -73,13 +66,6 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_par_image_height:
-    type: number
-    weight: 2
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
   field_paragraph_image_ex_class:
     type: string_textfield
     weight: 5
@@ -88,21 +74,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_paragraph_image_shadow:
-    type: options_select
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_paragraph_img_pos:
     type: options_select
     weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_rounded_options:
-    type: options_select
-    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }

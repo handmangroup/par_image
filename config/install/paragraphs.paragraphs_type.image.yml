@@ -1,9 +1,119 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+    - ui_styles_paragraphs
 id: image
 label: Image
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  ui_style_options:
+    enabled: true
+    enabled_styles:
+      background:
+        colors_background_color: colors_background_color
+        colors_background_opacity: 0
+      borders:
+        borders_border: 0
+        borders_border_color: 0
+        borders_border_opacity: 0
+        borders_border_radius: 0
+        borders_border_radius_position: 0
+        borders_border_radius_width: 0
+        borders_border_subtractive: 0
+        borders_border_width: 0
+        shadows: 0
+      display:
+        display_all: 0
+        display_print: 0
+        display_large: 0
+        display_medium: 0
+        display_small: 0
+        display_x_large: 0
+        display_xx_large: 0
+      flex:
+        flex_flex: 0
+        flex_align_content: 0
+        flex_align_items: 0
+        flex_align_self: 0
+        flex_direction: 0
+        flex_fill: 0
+        flex_grow_shrink: 0
+        flex_justify_content: 0
+        flex_order: 0
+        flex_wrap: 0
+      float:
+        clearfix: 0
+        float: 0
+      focus:
+        focus_ring: 0
+      interactions:
+        interactions_pointer_events: 0
+        interactions_text_selection: 0
+      link:
+        icon_link: 0
+        link_colored: 0
+        link_offset: 0
+        link_offset_hover: 0
+        link_opacity: 0
+        link_opacity_hover: 0
+        link_underline: 0
+        link_underline_opacity: 0
+        link_underline_opacity_hover: 0
+        stretched_link: 0
+      object_fit:
+        object_fit: 0
+      other:
+        vertical_rule: 0
+      position:
+        position_arrange_horizontal: 0
+        position_arrange_vertical: 0
+        position_center: 0
+        position: 0
+        position_position: 0
+      sizing:
+        ratio_aspect: 0
+        sizing_height: 0
+        sizing_width: 0
+      spacing:
+        spacing_horizontal_centering: 0
+        spacing_margin: 0
+        spacing_margin_bottom: 0
+        spacing_margin_end: 0
+        spacing_margin_start: 0
+        spacing_margin_top: 0
+        spacing_padding: 0
+        spacing_padding_bottom: 0
+        spacing_padding_end: 0
+        spacing_padding_start: 0
+        spacing_padding_top: 0
+        vertical_align: 0
+      text:
+        colors_color: 0
+        text_font_italics: 0
+        text_font_weight: 0
+        text_line_height: 0
+        text_font_monospace: 0
+        colors_opacity: 0
+        text_text_alignment: 0
+        text_text_decoration: 0
+        text_text_transform: 0
+        text_text_truncate: 0
+        text_text_wrapping: 0
+        typography: 0
+        text_text_word_break: 0
+      thumbnail:
+        img_thumbnail: 0
+      visibility:
+        opacity: 0
+        overflow: 0
+        overflow_horizontal: 0
+        overflow_vertical: 0
+        visibility: 0
+        visually_hidden: 0
+      z_index:
+        z-index: 0
+

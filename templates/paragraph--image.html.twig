@@ -55,13 +55,6 @@
   view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class
 ]
 %}
-{% set img_attributes = create_attribute() %}
-{%
-  set img_classes = [
-  paragraph.field_rounded_options.value|replace({'_':'-'}),
-  paragraph.field_paragraph_image_shadow.value|render|trim
-]
-%}
 
 {% block paragraph %}
 
@@ -69,7 +62,7 @@
   {% if img_url == '/' or img_pos == 'background' %}
     <div class="caption-img-bg">{{ content.field_image_caption }}</div>
   {% else %}
-      <img{{ img_attributes.addClass(img_classes) }} src="{{ img_url }}" alt="image">
+      <img src="{{ img_url }}" alt="image">
       <div>{{ content.field_image_caption }}</div>
   {% endif %}
   </div>
